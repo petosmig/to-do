@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"  />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>TO-DO-CARD</title>
+    </head>
+    <body>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<article class="todo-card" data-testid="test-todo-card">
+
+  <!-- Header -->
+  <header class="todo-header">
+    <h2 data-testid="test-todo-title" id="todo-title">
+      MY TO DO LIST
+    </h2>
+
+    <div class="badges">
+      <span 
+        class="priority high" 
+        data-testid="test-todo-priority"
+        aria-label="High priority"
+      >
+        🔴 High
+      </span>
+
+      <span 
+        class="status" 
+        data-testid="test-todo-status"
+        id="todo-status"
+      >
+        Pending
+      </span>
+    </div>
+  </header>
+
+  <!-- Description -->
+  <p data-testid="test-todo-description">
+    THINGS I WANNA DO BEFORE MY DUE DATE 
+  </p>
+
+  <!-- Due date -->
+  <div class="todo-time">
+    <time 
+      data-testid="test-todo-due-date"
+      datetime="2026-01-01T18:00:00Z"
+    >
+      Due febuary 18, 2026
+    </time>
+
+    <time 
+      data-testid="test-todo-time-remaining"
+      id="time-remaining"
+    >
+      <!-- JS fills this -->
+    </time>
+  </div>
+
+  <div class="warpper">
+    <form >
+      <input id="test-todo-input" type="text"
+      placeholder="write anything and hit enter to add " autocomplete="off">
+      <button id="add-button">ADD</button>
+    </form>
+    <ul id="test-todo-list">
+      <li class="test-todo">
+        <input type="checkbox" id="todo-1">
+        <label class="custom-checkbox" for="todo-1">
+
+        </label>
+
+        <label for="todo-1" class="test-todo-text">
+          my Frontend development growth
+        </label>
+        <button class="test-todo-delete-button">
+
+        </button>
+        <ul id="test-todo-list">
+      <li class="test-todo">
+        <input type="checkbox" id="todo-1">
+        <label class="custom-checkbox" for="todo-2">
+
+        </label>
+
+        <label for="todo-2" class="test-todo-text">
+          my Frontend development growth
+        </label>
+        <button class="test-todo-delete-button">
+
+        </button>
+      </li>
+
+    </ul>
+
+  </div>
+  
+
+  <!-- Footer -->
+  <footer class="todo-footer">
+     
+    <label class="checkbox">
+      <input 
+        type="checkbox" 
+        data-testid="test-todo-complete-toggle"
+        id="complete-toggle"
+        aria-labelledby="todo-title"
+      />
+      Mark as done
+    </label>
+
+    <div class="actions">
+      <button 
+        data-testid="test-todo-edit-button"
+        aria-label="Edit task"
+      >
+        ✏️ Edit
+      </button>
+
+      <button 
+        data-testid="test-todo-delete-button"
+        aria-label="Delete task"
+      >
+        🗑 Delete
+      </button>
+    </div>
+
+  </footer>
+
+</article>
+
+<script src="script.js"></script>
+</body>
+</html>
+    </body>
+</html>
